@@ -15,3 +15,8 @@ http://en.wikipedia.org/wiki/WebSocket
 
 Testing websocket online:
 http://www.websocket.org/echo.html
+
+My goal is to make it also make it working @  ESP8266.
+
+This is a nice topic, about websocket:
+http://stackoverflow.com/questions/8125507/how-can-i-send-and-receive-websocket-messages-on-the-server-side
