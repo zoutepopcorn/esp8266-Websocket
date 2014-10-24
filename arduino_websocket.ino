@@ -8,12 +8,11 @@ void setup() {
   debug.begin(9600);
   delay(50);
   debug.println("start");
-  //doHandshake("x3JJHMbDL1EzLkh9GBhXDw==");
   Serial.println("AT+RST");
   delay(5000);
-  Serial.println("AT+CWMODE=1");  // NO CHANGE
+  Serial.println("AT+CWMODE=1");
   delay(1500);
-  //Serial.println("AT+CWJAP=\"Popipopcorn\",\"BBBBBBBBBB\"\r\n");
+  Serial.println("AT+CWJAP=\"SSID\",\"PASS\"\r\n");
   Serial.find("OK");
   //delay(3000);
   Serial.println("AT+CIPMUX=1");
