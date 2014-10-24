@@ -14,7 +14,6 @@ void setup() {
   delay(1500);
   Serial.println("AT+CWJAP=\"SSID\",\"PASS\"\r\n");
   Serial.find("OK");
-  //delay(3000);
   Serial.println("AT+CIPMUX=1");
   Serial.find("OK");
   delay(3000);
@@ -34,7 +33,6 @@ void setup() {
 
 
 void loop() {
-  //Serial.println("hi");
   String key = "";
   boolean isKey = Serial.find("Key: ");
   if(isKey) {
@@ -42,7 +40,6 @@ void loop() {
       while(true) {
         if(Serial.available()) {
           char c = (char)Serial.read();
-          //debug.print(c);
           if(c == '=') {
             doHandshake(key + "==");
             key = "";
@@ -54,8 +51,6 @@ void loop() {
         }
       }
       while(true) {
-        //boolean data = Serial.find(":");
-        //while(data) {
           if(Serial.available()) {
             byte by = Serial.read();
             debug.print((char)by);
@@ -65,9 +60,7 @@ void loop() {
             if(by & 0x80) {
               debug.println("Joehooeooeoe");
             }
-            
           }
-        //}
       }
       
   }
@@ -83,7 +76,6 @@ boolean readLines(int lines) {
         debug.write(c);
       } else {
         count++;
-        //break;
       } 
     }
   }
@@ -122,10 +114,6 @@ bool doHandshake(String k) {
     boolean found = false;
     while(!found)
       found = Serial.find(">");
-    //Serial.println("pipo");
-   
-    
-    //delay(1000);
     
     Serial.print("HTTP/1.1 101 Switching Protocols\r\n");
     Serial.print("Upgrade: websocket\r\n");
