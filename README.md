@@ -1,7 +1,7 @@
 esp8266-Websocket
 =================
 
-For now a Websocket. 
+Testing a Websocket... 
 
 For now not working and @ arduino
 
