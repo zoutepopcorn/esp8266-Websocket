@@ -5,7 +5,10 @@ For now a Websocket.
 
 For now not working and @ arduino
 
-ESP @ 9600
+I used some code from this lib:
+https://github.com/ejeklint/ArduinoWebsocketServer
+
+ESP8266 @ 9600
 
 Websocket handshake (working)
 http://en.wikipedia.org/wiki/WebSocket
