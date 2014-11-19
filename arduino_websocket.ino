@@ -91,6 +91,15 @@ void loop() {
             }
           }
         }
+       // try to receive a message
+        while(true) {
+            if(Serial.find(":")) { 
+              if(getFrame()) { // display the message
+                break; // lets try to send something.
+              }
+            }
+        }
+        
         // _________________________ PROBLEMO ____________________________________
         while(true) {  // So far so good. Handshake done Now wait for the message
            Serial.println("AT+CIPSEND=0,6");
