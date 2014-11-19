@@ -3,7 +3,9 @@ esp8266-Websocket
 
 Testing a Websocket... 
 
-For now not working and @ arduino
+For now not working and @ arduino but I want to make it run on the ESP itself.
+
+Sending a message is broken.
 
 I used some code from this lib:
 https://github.com/ejeklint/ArduinoWebsocketServer
