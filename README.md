@@ -8,7 +8,7 @@ For now not working and @ arduino
 I used some code from this lib:
 https://github.com/ejeklint/ArduinoWebsocketServer
 
-ESP8266 @ 38400 (Arduino pro mini @ 3.3V)
+My ESP8266 is @ 38400 (Arduino pro mini @ 3.3V Its the max speed)
 
 Websocket handshake (working)
 http://en.wikipedia.org/wiki/WebSocket
