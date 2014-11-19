@@ -63,11 +63,9 @@ void setup() {
   delay(3000);
   Serial.println("AT+CIFSR");   // Display the ip please
   boolean r = readLines(4);
-  debug.println("eind setup");
+  debug.println("end setup");
   debug.println(server);
   boolean found = false;
-  
-  debug.println("link builded, end setup");
 }
 
 
