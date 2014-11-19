@@ -176,17 +176,10 @@ boolean getFrame() {
     return true;
 }
 
+// !!!!!!!!!! NOT WORKING
 boolean sendMessage(char *data, byte length) {    
- 
-      Serial.print((uint8_t) 0b00000000);   // 
-      //Serial.print((uint8_t) 0x1); // Txt frame opcode
-      
+      Serial.print((uint8_t) 0x1); // Txt frame opcode
       Serial.print((uint8_t) length); // Length of data
-      //Serial.print((uint8_t) 0x00);
-      //Serial.print((uint8_t) 0x00);
-      //Serial.print((uint8_t) 0x00);
-      //Serial.print((uint8_t) 0x00);
-      
       for (int i = 0; i < length ; i++) {
           Serial.print(data[i]);
       }
