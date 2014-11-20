@@ -8,7 +8,8 @@ For now not working and @ arduino but I want to make it run on the ESP itself.
 Sending a message is broken.
 
 I used some code from this lib:
-https://github.com/ejeklint/ArduinoWebsocketServer
+- https://github.com/ejeklint/ArduinoWebsocketServer
+- https://github.com/krohling/ArduinoWebsocketClient/
 
 My ESP8266 is @ 38400 (Arduino pro mini @ 3.3V Its the max speed)
 
