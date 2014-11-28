@@ -1,6 +1,8 @@
 esp8266-Websocket
 =================
 
+At this moment not working so much at this websocket. I try to implement it in the esp itself later.
+
 Testing a Websocket... 
 
 For now not working and @ arduino but I want to make it run on the ESP itself.
@@ -10,6 +12,10 @@ Sending a message is broken.
 I used some code from this lib:
 - https://github.com/ejeklint/ArduinoWebsocketServer
 - https://github.com/krohling/ArduinoWebsocketClient/
+
+TODO: 
+- https://github.com/mc96107/Arduino-Websocket/blob/master/WebSocketClient.cpp
+- debug with Wireshark..
 
 My ESP8266 is @ 38400 (Arduino pro mini @ 3.3V Its the max speed)
 
