@@ -3,6 +3,7 @@
 :: place the .bat file in your project folder with the pyton script
 :: Tnx to the themadinventor https://github.com/themadinventor/esptool
 :: full guide @ http://signusx.com/esp8266-windows-compilation-tutorial/
+:: UPDATE v2. It compiles and flash :D.
 @echo off
 if EXIST %~dp0%1 (
     echo %~dp0%1
