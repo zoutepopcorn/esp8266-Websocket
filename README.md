@@ -1,7 +1,7 @@
 esp8266-Websocket
 =================
 
-At this moment not working so much at this websocket. I try to implement it in the esp itself later.
+At this moment not working so much at this websocket. I try to implement it in the esp8266 itself later.
 
 Testing a Websocket... 
 
